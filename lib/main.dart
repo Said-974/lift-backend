@@ -64,7 +64,6 @@ class _LiftCalculatorScreenState extends State<LiftCalculatorScreen> {
     }
   }
 
-  // Jami Tannarx (Montaj narxi chiqarib tashlandi)
   double getTotalCost() {
     double base = getBaseFactoryPrice();
     if (isGold) base += 500;
@@ -214,17 +213,17 @@ class _LiftCalculatorScreenState extends State<LiftCalculatorScreen> {
             const SizedBox(height: 15),
 
             SwitchListTile(
-              title: const Text("Karkaz o'rnatish (+$1500)"),
+              title: const Text("Karkaz o'rnatish (+\$1500)"),
               value: hasKarkaz,
               onChanged: (val) => setState(() => hasKarkaz = val),
             ),
             CheckboxListTile(
-              title: const Text("GOLD dizayn (+$500)"),
+              title: const Text("GOLD dizayn (+\$500)"),
               value: isGold,
               onChanged: (val) => setState(() => isGold = val!),
             ),
             CheckboxListTile(
-              title: const Text("PANORAMNIY dizayn (+$1500)"),
+              title: const Text("PANORAMNIY dizayn (+\$1500)"),
               value: isPanorama,
               onChanged: (val) => setState(() => isPanorama = val!),
             ),
@@ -233,7 +232,7 @@ class _LiftCalculatorScreenState extends State<LiftCalculatorScreen> {
             TextField(
               controller: advanceController,
               keyboardType: TextInputType.number,
-              decoration: const InputDecoration(labelText: "Olingan Avans ($)"),
+              decoration: const InputDecoration(labelText: "Olingan Avans (\$)"),
             ),
 
             const Divider(height: 30),
@@ -273,19 +272,19 @@ class _LiftCalculatorScreenState extends State<LiftCalculatorScreen> {
                   onPressed: () {
                     if (getProfit() - 50 >= 1000) setState(() => discount += 50);
                   },
-                  child: const Text("-$50"),
+                  child: const Text("-\$50"),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     if (getProfit() - 100 >= 1000) setState(() => discount += 100);
                   },
-                  child: const Text("-$100"),
+                  child: const Text("-\$100"),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     if (getProfit() - 200 >= 1000) setState(() => discount += 200);
                   },
-                  child: const Text("-$200"),
+                  child: const Text("-\$200"),
                 ),
               ],
             ),
