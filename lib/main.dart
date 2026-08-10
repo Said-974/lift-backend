@@ -15,11 +15,11 @@ class LiftApp extends StatelessWidget {
       title: 'SPACE-S Lift',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color(0xFF121418), // To'q lift paneli foni
-        primaryColor: const Color(0xFFD4AF37), // Premium Oltin rang
+        scaffoldBackgroundColor: const Color(0xFF121418),
+        primaryColor: const Color(0xFFD4AF37),
         colorScheme: const ColorScheme.dark(
           primary: Color(0xFFD4AF37),
-          secondary: Color(0xFF00E676), // O'zgacha yashil
+          secondary: Color(0xFF00E676),
           surface: Color(0xFF1E222A),
         ),
         appBarTheme: const AppBarTheme(
@@ -196,7 +196,7 @@ class _LiftCalculatorScreenState extends State<LiftCalculatorScreen> {
         ],
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 40.0), // Pastga qo'shimcha joy qoldirildi
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
