@@ -218,7 +218,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Text("Assalomu alaykum,", style: TextStyle(color: Colors.grey, fontSize: 13)),
                         SizedBox(height: 4),
-                        Text("Said", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+                        Text("Xush kelibsiz!", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
                         SizedBox(height: 4),
                         Text("Bugungi ishlaringiz zo'r!", style: TextStyle(color: Color(0xFF3B82F6), fontSize: 12)),
                       ],
